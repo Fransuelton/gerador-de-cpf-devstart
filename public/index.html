@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <form name="form_submit">
+        <div class="container m-auto col-12 col-md-6 form">
+            <div class="text-left content">
+                <h1 class="title mb-2">Gerador de CPF</h1>
+
+                <p>Pontos e traços?</p>
+                <div class="d-flex w-100">
+                    <div class="input-radio">
+                        <input type="radio" name="dotsAndDashes" id="dotsAndDashes" value="sim" checked>
+                        <label for="dotsAndDashes">Sim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="dotsAndDashes" id="dotsAndDashes" value="nao" checked>
+                        <label for="dotsAndDashes">Não</label>
+                    </div>
+                </div>
+                <input type="button" value="Gerar" class="btn-form" onclick="gerar()">
+                <div class="mt-4">
+                    <input class="input-result" type="text" name="result" id="result" disabled>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
